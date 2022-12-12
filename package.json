@@ -1,0 +1,32 @@
+{
+    "name": "commit-config",
+    "version": "1.0.0",
+    "author": "Roberto Ríos <contact@rrios.dev>",
+    "license": "MIT",
+    "files": [
+        "commitlint.config.js"
+    ],
+    "scripts": {
+        "commit": "cz",
+        "lint": "eslint src --ext ts,tsx",
+        "prepare": "husky install",
+        "test:watch": "jest --watch",
+        "test": "jest"
+    },
+    "config": {
+        "commitizen": {
+            "path": "cz-conventional-changelog"
+        }
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/rrios-dev/commit-config"
+    },
+    "dependencies": {
+        "@commitlint/config-conventional": "^17.3.0",
+        "commitizen": "^4.2.6",
+        "commitlint": "^17.3.0",
+        "cz-conventional-changelog": "^3.3.0",
+        "husky": "^8.0.2"
+    }
+}
